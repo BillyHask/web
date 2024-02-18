@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Shopiy</title>
+  <link href="style/style.css" rel="stylesheet" />
+  <!--FONT-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+  <!--REACT-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!--BABEL-->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <a class="header_logo logo"> <img src="picture/icons/logo.png" width="125" height="40" alt="Shoppi logo"> </a>
+    <div class="burger_menu">
+      <div class="burger_button"> <span></span> </div>
+    </div>
+    <nav class="header-navigation navigation">
+      <ul class="header-navigation__list navigation__list">
+        <li class="header-navigation__item navigation__item">
+        <a class="header-navigation__link navigation__link" href="#" id="homeLink" >About</a> </li>
+        <li class="header-navigation__item navigation__item"> <a class="header-navigation__link navigation__link" href="#" id="aboutLink">Product</a> </li>
+        <li class="header-navigation__item navigation__item"> <a class="header-navigation__link navigation__link" href="#" id="servicesLink">Service</a> </li>
+        <li class="header-navigation__item navigation__item"> <a class="header-navigation__link navigation__link" href="#" id="contactLink">Contact</a> </li>
+      </ul>
+      <div class="header-user">
+        <button class="user__sign-button button" id="user_signbutton">Sign in</button>
+        <button class="user__free-button button" id="user_freebutton">Try Free</button>
+      </div>
+<!--      SELECT LANG-->
+      <div class="language-container">
+      <button id="enButton">Англійська</button>
+      <button id="uaButton">Українська</button>
+<!--      -->
+    </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="power container">
+      <div class="power__text-content"> <img class="power__cube" src="pictures/pictures/icons/cube-icon.svg" alt="Cube">
+        <div class="power__text-content__inner">
+          <div class="section-header section-power">
+            <p class="section-header__suptitle power-suptitle" id="section-header">100% SATISFIED GUARANTEE</p>
+            <h1 class="section-header__subject power-subject" id="section_headersubject">Power up your
+shopify products</h1>
+            <p class="section-header__subtitle power__subtitle" id="sectionheader_subtitle powersubtitle">More than 90,000+ companies trust our business. Get help from a dedicated shopify developer today.</p>
+          </div>
+          <form class="power__forma forma" action="#" method="post">
+            <div class="input__wrapper">
+              <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.04297 6.99915C3.04297 6.42846 3.52738 5.96582 4.12494 5.96582H28.8749C29.4725 5.96582 29.9569 6.42846 29.9569 6.99915V23.4679C29.9569 24.0044 29.7298 24.5155 29.3316 24.8896C28.934 25.2631 28.3984 25.47 27.8437 25.47H5.15619C4.60145 25.47 4.06589 25.2631 3.66826 24.8896C3.27003 24.5155 3.04297 24.0045 3.04297 23.4679V6.99915ZM5.2069 8.03249V23.4033H27.793V8.03249H5.2069Z" fill="#868695" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.32138 6.3072C3.72152 5.88336 4.40567 5.84956 4.84947 6.23172L16.4999 16.2641L28.1504 6.23172C28.5942 5.84956 29.2784 5.88336 29.6785 6.3072C30.0787 6.73105 30.0433 7.38445 29.5995 7.76661L17.2245 18.4229C16.8128 18.7774 16.1871 18.7774 15.7754 18.4229L3.40042 7.76661C2.95662 7.38445 2.92124 6.73105 3.32138 6.3072Z" fill="#868695" /> </svg>
+              <input class="power__input forma__input" type="email" id="forma_input" placeholder=""> </div>
+            <button class="forma__button button" id="forma_button">Sign in</button>
+          </form>
+          <ul class="power-avaliable__list">
+            <li class="power-avaliable__items"> <img src="pictures/pictures/icons/check-mark-icon.png" width="31" height="30" alt="Check mark">
+              <p class="power__items-text" id="power_itemstext">30 days free trial</p>
+            </li>
+            <li class="power-avaliable__items"> <img src="pictures/pictures/icons/check-mark-icon.png" width="31" height="30" alt="Check mark">
+              <p class="power__items-text" id="power_itemstext2">No credit card required</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="power__pictures-wrapper"> <img class="power__illustration" src="pictures/pictures/illustration/mean-foto.png" alt="Photo of a man"> <img class="power__triangle" src="pictures/pictures/icons/triangle-icon.png" alt="Triangle"> <img class="power__cubeTwo" src="pictures/pictures/icons/cube-icon.svg" alt="Cube">
+        <div class="power__intresting"> <img class="power__intresting-foto" src="pictures/pictures/illustration/margaret-philips-foto.png" width="153" height="233" alt="Margaret Philips photo">
+          <div class="power__intresting-content">
+            <div class="power__intresting-text">
+              <h3 class="power__intresting-name" id="power_intrestingname">Margaret Philips</h3>
+              <p class="power__intresting-suptitle" id="power_intrestingsuptitle">Watch our best services</p>
+            </div>
+            <a class="power__play-video" href="#"> <img src="pictures/pictures/icons/play-icon.png" width="45" height="45" alt="Play video"> </a>
+          </div>
+        </div>
+        <div class="power__progress"> <img src="pictures/pictures/icons/make-progress-icon.png" width="57" height="76" alt="Make progress">
+          <h3 class="progress__subject" id="progress_subject">Make Progress</h3>
+          <p class="progress__suptitle" id="progress_suptitle">with opening plans</p> <a class="progress__button" href="#" id="progress_button">Buy Plan</a> </div>
+      </div>
+    </section>
+    <section class="build container">
+      <div class="build__pictures-wrapper"> <img src="pictures/pictures/illustration/phone-foto.png" alt="Phone Illustration"> </div>
+      <div class="build__content">
+        <div class="section-header section-build">
+          <p class="section-header__suptitle build-suptitle">SERVICES WE PROVIDES</p>
+          <h2 class="section-header__subject build-subject">Build on both: Google web stories and AMP website format</h2> </div>
+        <ul class="statistic__list">
+          <li class="statistic__item">
+            <div class="statistic__count">5660</div>
+            <p class="statistic__info">Product sale per day working and sales</p>
+          </li>
+          <li class="statistic__item">
+            <div class="statistic__count"><span>4M+</span></div>
+            <p class="statistic__info">Downloaded saled in your good.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!--JS-->
+  <script src="js/index.js" type="text/babel"></script>
+</body>
+
+</html>
